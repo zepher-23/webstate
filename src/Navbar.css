@@ -1,0 +1,10 @@
+.nav-menu-hover:hover {
+    color:var(--primary-color);
+    transform: translateY(-3px);
+}
+.nav-menu-hover{
+    transition: .3s;
+}
+.nav{
+        background: linear-gradient(to bottom right, var(--surface-0), #222831);
+}

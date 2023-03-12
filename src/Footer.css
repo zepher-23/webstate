@@ -1,0 +1,32 @@
+#whatsapp:hover{
+
+transform: scale(1.1);
+cursor: pointer;
+transition: 0.3s ease-in-out;
+}
+#whatsapp{
+    background-color: #eeeeee;
+    /* background-color: var(--primary-color); */
+/* background-color: #393E46; */
+border-radius: 8px;
+
+}
+#footer{
+    background: linear-gradient(to bottom right, var(--surface-0), #222831);
+}
+li{
+    list-style-type: none;
+}
+.linkedin:hover{
+    color:#0A66C2;
+
+}
+.facebook:hover{
+    color: #3b5998;
+}
+.twitter:hover {
+    color: #1DA1F2;
+}
+.whatsapp:hover{
+    color: #128C7E;
+}

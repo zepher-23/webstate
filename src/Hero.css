@@ -1,0 +1,33 @@
+
+#hero{
+    display: relative;
+    background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height:36rem;
+       
+}
+#hero::before{
+    content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+    background: url('./img/back.jpg') ;
+opacity: 0.3;
+background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index:-1;
+}
+.spline{
+    overflow-y: hidden;
+}
+
+Button:active{
+transform: scale(0.95);
+
+}
+
