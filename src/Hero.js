@@ -69,10 +69,10 @@ const Hero = () => {
   return (
     <div id='hero' className="m-0 w-full p-0" >
 
-      <div className=" absolute w-5 p-5   m-8  ">
+      <div className=" absolute w-5 p-5  mt-7 m-8  ">
 
 
-        <h1 className='font-semibold mt-4 p-1 text-6xl text-primary'>
+        <h1 className='font-semibold mt-0 p-1 text-6xl text-primary'>
           <TextTransition inline springConfig={presets.gentle}>{service_list[index % service_list.length]} </TextTransition>
         </h1>
 
@@ -82,7 +82,7 @@ const Hero = () => {
         </h5>
         <Button label="Contact Us" size="lg" className='shadow-8 surface-0  transition-duration-500 hover:bg-primary-900 text-600 font-medium border-none m-2 mt-3 p-ripple' text raised />
         <Ripple />
-        <Button label="Learn More" size="lg" className='shadow-8 surface-0  transition-duration-500 hover:bg-primary-900 text-600 font-medium border-none m-2 mt-3 p-ripple' text raised />
+        <Button label="Get Started" size="lg" className='shadow-8 surface-0  transition-duration-500 hover:bg-primary-900 text-600 font-medium border-none m-2 mt-3 p-ripple' text raised />
         <Ripple />
 
       </div>

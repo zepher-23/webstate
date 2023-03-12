@@ -1,9 +1,12 @@
 import React from "react";
 import './Footer.css';
 import img from './img/whatsapp.png'
+import { BrowserRouter as Router, Route, Link, useNavigate } from 'react-router-dom';
+
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/bootstrap4-dark-blue/theme.css'
 const Footer = () => {
+    let navigate = useNavigate();
     return (
         <div id="footer" className="h-15rem card relative flex w-screen ">
 
@@ -31,7 +34,7 @@ const Footer = () => {
                 
                 </ul>
 
-                <div className="flex bg-surface-0 h-4rem border-round shadow-1 flex-row m-2 p-2">
+                <div className="flex bg-surface-0 relative bottom-0 h-4rem border-round shadow-1 flex-row m-2 p-2">
                     <h5 className="font-normal">Follow us...</h5>
                     <i className="pi pi-linkedin transition-duration-300 cursor-pointer linkedin m-2" style={{ fontSize: '2rem' }}></i>
                                         <i className="pi pi-whatsapp transition-duration-300 cursor-pointer whatsapp m-2" style={{ fontSize: '2rem' }}></i>
@@ -46,8 +49,8 @@ const Footer = () => {
    
             </div>
             
-                <img  id="whatsapp" className="w-3rem   shadow-8 h-3rem fixed bottom-0 m-3 p-1 right-0"  src={img} alt='dkjnsajc'/>
-
+         <a href="whatsapp://send?phone=9110835613">  <img  id="whatsapp" className="w-3rem shadow-8 h-3rem fixed bottom-0 m-3 p-1 right-0"  src={img} alt='dkjnsajc' />
+                </a>    
 </div>
 
     );

@@ -1,18 +1,19 @@
 
-import './App.css';
 
-import Home from './Home'
+
+import Navbar from './Navbar'
+import About from './About'
+import Hero from './Hero'
+import Footer from './Footer'
 import Whatsapp from './Whatsapp'
 import "primeicons/primeicons.css";
 import "primereact/resources/primereact.min.css";
 import Instructions from './Instructions'
 import Preloader from './Preloader'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useNavigate } from 'react-router';
 
 
-function App() {
-  let navigate = useNavigate();
+
+function Home() {
   const redirectToWhatsApp = () => {
     window.location.href = 'https://wa.me/9110835613';
   }
@@ -21,10 +22,16 @@ function App() {
       
       
       <div>
-        <Routes>
-          <Route path="/" element={<Home/> } /> 
-          <Route path="/Whatsapp" element={<Whatsapp/> } /> 
-          </Routes>
+        
+        <Preloader />
+        <Navbar />
+         <Hero />
+        
+        <About />
+        <Instructions />
+          <Footer />
+          
+          
         </div>
 
         
@@ -37,4 +44,4 @@ function App() {
   
 }
 
-export default App;
+export default Home;
